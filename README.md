@@ -16,7 +16,7 @@ Released under the MIT license - http://opensource.org/licenses/MIT
 ## Requirements
 * jQuery v1.x +
 * Web server (makes asynchronous calls)
-* An app created at developers.facebook.com (including App ID, and App Secret)
+* An app created at http://developers.facebook.com (including App ID, and App Secret)
 
 ## Installation
 
