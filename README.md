@@ -75,7 +75,7 @@ Available reactions are: `love, like, haha, wow, angry, sad`
       postID: "10155446865956337",
       refreshTime: 5,
       appendPrepend: 'prepend',
-      totalType: 'selected'
+      totalType: 'selected',
       totalSelector: '.fbr-total'
 
     });
