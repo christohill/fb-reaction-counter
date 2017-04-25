@@ -6,7 +6,7 @@
 		var settings = $.extend({
 			pageURL: '',
 			clientID: '',
-			secretID: '',
+			clientSecret: '',
 			postID: '',
 			refreshTime: 5,
 			defaultCount: 0,
@@ -20,6 +20,11 @@
 		var container = this;
 		var sections = this.find('[data-reaction]').not('p');
 		var accessToken = getAccessToken(settings.clientID, settings.clientSecret);
+
+		// Throw alert if required fields are not met
+		if(!settings.pageURL || !settings.clientID || !settings.clientSecret || !settings.postID) {
+			alert('Please fill out the required plugin settings: pageURL, clientID, clientSecret, postID');
+		}
 
 		// Make sure pageID is set properly
 		if(pageID = getPageID(settings.pageURL, accessToken)) {
