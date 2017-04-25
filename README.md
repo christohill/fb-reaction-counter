@@ -8,7 +8,7 @@ A jQuery plugin for retrieving reaction totals from a Facebook post using the Fa
 
 Initially developed to do live polls streaming to Facebook Live, but the script itself could probably be used for other things.
 
-If you're new to HTML/CSS/JavaScript, see the examples folder for some basic examples using the script.
+If you're new to HTML/CSS/JavaScript, see the examples folder for some basic examples using the script (Note: You'll need your App ID and App Secret from http://developers.facebook.com.
 
 #### License
 Released under the MIT license - http://opensource.org/licenses/MIT
@@ -16,7 +16,7 @@ Released under the MIT license - http://opensource.org/licenses/MIT
 ## Requirements
 * jQuery v1.x +
 * Web server (makes asynchronous calls)
-* An app created at http://developers.facebook.com (including App ID, and App Secret)
+* An app created at http://developers.facebook.com (including App ID, and App Secret) https://developers.facebook.com/docs/apps/register
 
 ## Installation
 
