@@ -1,0 +1,154 @@
+body,
+html {
+
+	height: 100%;
+	margin: 0;
+	width: 100%;
+
+}
+
+/* Example 1 */
+.livepoll .reaction-container {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.livepoll .reaction-container .reaction {
+	color: white;
+	display: table-cell;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 72px;
+	font-weight: 700;
+	height: 100%;
+	letter-spacing: -2px;
+	text-align: center;
+	vertical-align: middle;
+	width: 16.6666667%;
+}
+
+.livepoll h6 {
+	font-weight: 400;
+	font-size: 21px;
+	letter-spacing: 0;
+	margin: 0;
+	opacity: .75;
+	text-transform: uppercase;
+}
+
+.livepoll .reaction img {
+	display: block;
+	margin: 50px auto;
+	max-width: 60%;
+}
+
+.livepoll .reaction-container .reaction.love {
+	background-color: #224D6D;
+}
+
+.livepoll .reaction-container .reaction.like {
+	background-color: #06728C;
+}
+
+.livepoll .reaction-container .reaction.haha {
+	background-color: #56a19f;
+}
+
+.livepoll .reaction-container .reaction.wow {
+	background-color: #A8D1B3;
+}
+
+.livepoll .reaction-container .reaction.angry {
+	background-color: #FCE7B8;
+}
+
+.livepoll .reaction-container .reaction.sad {
+	background-color: #F67C6D;
+}
+
+/* Example 2 */
+
+.flyout {
+	background-color: #ececec;
+	display: table;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+.flyout .flyout-container {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.flyout h4 {
+
+	bottom: 25px;
+	color: rgba(0, 0, 0, .45);
+	left: 0;
+	margin: 0 auto;
+	position: fixed;
+	right: 0;
+	text-shadow: 0 1px 1px #fff;
+	text-transform: uppercase;
+
+}
+
+.flyout .reaction-container {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin: 0 auto;
+	padding: 14px 5px 10px;
+	width: 30%;
+}
+
+.flyout .reaction-container li {
+
+	cursor: pointer;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 16.6666666667%;
+
+}
+
+.flyout .reaction-container li:hover .fbr-counter {
+	color: #56A19F;
+	font-weight: bold;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.flyout .reaction-container li:hover img {
+	width: 35px;
+	height: 35px;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.flyout .reaction-container .fbr-counter {
+	color: #ccc;
+	display: inline-block;
+	line-height: -20px;
+	margin-left: 5px;
+	text-decoration: none;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.flyout .reaction-container li img {
+	height: 20px;
+	margin-top: -4px;
+	vertical-align: middle;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+	width: 20px;
+}

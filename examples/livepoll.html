@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Facebook Reaction Counter - Live Poll</title>
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="livepoll">
+
+	<h1 style="position: fixed; left: 0; top: 0; background-color: rgba(0,0,0,.75); padding: 4px 8px; color: white; font-family: Arial; font-weight: lighter; letter-spacing: -1px;"><span class="fbr-total" style="font-weight: bold;"></span> Reactions</h1>
+
+	<!-- REACTIONS (Allowed reactions: love, like, haha, wow, angry, sad) -->
+	<main class="reaction-container">
+
+		<section data-reaction="love" class="reaction love">
+			<h6>Love</h6>
+			<img src="images/love.png" alt="reaction_love" />
+		</section>
+
+		<section data-reaction="like" class="reaction like">
+			<h6>Like</h6>
+			<img src="images/like.png" alt="reaction_like" />
+		</section>
+
+		<section data-reaction="haha" class="reaction haha">
+			<h6>Haha</h6>
+			<img src="images/haha.png" alt="reaction_haha" />
+		</section>
+
+		<section data-reaction="wow" class="reaction wow">
+			<h6>Wow</h6>
+			<img src="images/wow.png" alt="reaction_wow" />
+		</section>
+
+		<section data-reaction="angry" class="reaction angry">
+			<h6>Angry</h6>
+			<img src="images/angry.png" alt="reaction_angry" />
+		</section>
+
+		<section data-reaction="sad" class="reaction sad">
+			<h6>Sad</h6>
+			<img src="images/sad.png" alt="reaction_sad" />
+		</section>
+
+	</main>
+
+	<!-- Include scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../jquery.fb-reaction-counter.js"></script>
+
+	<!-- Init reaction counter -->
+	<script>
+		$(document).ready(function() {
+
+			$('.reaction-container').reactionCounter({
+				clientID: "203948720389472", // Change this to your own
+			    clientSecret: "s98d7f6s987df687787df87f68", // Change this to your own
+			    pageURL: 'https://facebook.com/marketing', // Change this to your own
+			    postID: "10155446865956337", // Change this to your own
+				refreshTime: 5,
+				appendPrepend: 'prepend',
+				totalType: 'selected'
+			});
+
+		});
+	</script>
+
+</body>
+</html>

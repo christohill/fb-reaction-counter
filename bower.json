@@ -1,0 +1,28 @@
+{
+  "name": "fb-reaction-counter",
+  "authors": [
+    "Chris Tohill <chris@visualoverdose.ca>"
+  ],
+  "description": "A jQuery plugin for retrieving reaction totals from a Facebook post using the Facebook API",
+  "main": "jquery.fb-reaction-counter.js",
+  "keywords": [
+    "Facebook",
+    "reactions",
+    "counter",
+    "Facebook API",
+    "Facebook Graph",
+    "jquery"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.visod.ca",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.x"
+  }
+}

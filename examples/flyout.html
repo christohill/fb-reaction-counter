@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Facebook Reaction Counter - Flyout</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="flyout">
+
+	<div class="flyout-container">
+		<ul class="reaction-container">
+			<li data-reaction="love"><img src="images/love.png"></li><li data-reaction="like"><img src="images/like.png"></li><li data-reaction="haha"><img src="images/haha.png"></li><li data-reaction="wow"><img src="images/wow.png"></li><li data-reaction="angry"><img src="images/angry.png"></li><li data-reaction="sad"><img src="images/sad.png"> </li>
+		</ul>
+		<h4><span class="fbr-total"></span> Reactions</h4>
+	</div>
+
+	<!-- Include scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../jquery.fb-reaction-counter.js"></script>
+
+	<!-- Init reaction counter -->
+	<script>
+		$(document).ready(function() {
+
+			$('.reaction-container').reactionCounter({
+				clientID: "203948720389472", // Change this to your own
+			    clientSecret: "s98d7f6s987df687787df87f68", // Change this to your own
+			    pageURL: 'https://facebook.com/marketing', // Change this to your own
+			    postID: "10155446865956337", // Change this to your own
+				refreshTime: 5,
+				appendPrepend: 'append',
+				totalType: 'selected'
+			});
+
+		});
+	</script>
+
+</body>
+</html>
